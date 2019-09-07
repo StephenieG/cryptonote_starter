@@ -1,7 +1,21 @@
-## Updates by Stephenie.
-Hello, Many people are having compiling errors on linux since the origional cryptonote starter
+## Updates by Stephenie to make compiling on Ubuntu 18.04 more eazy.
+Hello, Many people are having compiling errors on linux, since the origional cryptonote starter project
 has a tutorial site callt  [CryptoNote Starter](https://cryptonotestarter.org/) thats made to build this with an outdated version of Ubuntu 14.04.
 Ofcourse we respect the origional project and thats why we just changet a minimal amount of change to make it compile on Ubuntu 18.04. also we updated the recuirements of libboost to make it easyer to usse since outdated Libboost 1.55 is for some people hard to install on later versions of ubuntu, after all we have to make it easy for the makers aswell for the ussers.
+### Prepare Ubuntu 18.04, lime or other linux based on Ununtu 18.04
+Execute the following command to get everything you need in order to setup an Ubuntu build environment
+```
+sudo apt-get install build-essential git cmake libboost-all-dev
+```
+### building
+When you are redy to build jou kan build it with the command "make"
+and for faster compiling you can usse more treads "make -j3" the number defines the number of treads
+with systems with 6 or less GB of ram we recommand -j2 flagg to avoid ussing swapmemory with will delay the build extreamly
+also we recomend to keep that nummber lower then the amound of treads the cpu has.
+
+example if you have a Quadcore i7 HT Enabled (total 8 threads) with 64GB or ram you van do make -j7
+
+
 
 This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurrency protocol.
 
@@ -210,7 +224,7 @@ Recompile everything again. Your coin code is ready now. Make an announcement fo
 
 ### On *nix
 
-Dependencies: GCC 4.7.3 or later, CMake 2.8.6 or later, and Boost 1.55.
+Dependencies: GCC 4.7.3 or later, CMake 2.8.6 or later, and Boost 1.65.
 
 You may download them from:
 
@@ -229,7 +243,7 @@ To build, change to a directory where this file is located, and run `make`. The 
 * Building with Clang: it may be possible to use Clang instead of GCC, but this may not work everywhere. To build, run `export CC=clang CXX=clang++` before running `make`.
 
 ### On Windows
-Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, and Boost 1.55. You may download them from:
+Dependencies: MSVC 2013 or later, CMake 2.8.6 or later, and Boost 1.65. You may download them from:
 
 * http://www.microsoft.com/
 * http://www.cmake.org/
