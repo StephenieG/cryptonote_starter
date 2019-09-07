@@ -14,7 +14,8 @@ with a systems with 6 or less GB of ram we recommand -j2 flagg to avoid using sw
 also we recommend to keep that number lower then the amount of threads the cpu has.
 
 example if you have a Quadcore i7 HT Enabled (total 8 threads) with 64GB or ram you can do make -j7
-
+##
+## Below this line the file has minimal changes from the origional to make it work
 
 
 This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurrency protocol.
