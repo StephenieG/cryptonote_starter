@@ -1,4 +1,7 @@
-###Updates by Stephenie.
+## Updates by Stephenie.
+Hello, Many people are having compiling errors on linux since the origional cryptonote starter
+has a tutorial site callt  [CryptoNote Starter](https://cryptonotestarter.org/) thats made to build this with an outdated version of Ubuntu 14.04.
+Ofcourse we respect the origional project and thats why we just changet a minimal amount of change to make it compile on Ubuntu 18.04. also we updated the recuirements of libboost to make it easyer to usse since outdated Libboost 1.55 is for some people hard to install on later versions of ubuntu, after all we have to make it easy for the makers aswell for the ussers.
 
 This is the reference code for [CryptoNote](https://cryptonote.org) cryptocurrency protocol.
 
