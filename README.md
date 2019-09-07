@@ -1,19 +1,19 @@
 ## Updates by Stephenie to make compiling on Ubuntu 18.04 more eazy.
 Hello, Many people are having compiling errors on linux, since the origional cryptonote starter project
-has a tutorial site callt  [CryptoNote Starter](https://cryptonotestarter.org/) thats made to build this with an outdated version of Ubuntu 14.04.
-Ofcourse we respect the origional project and thats why we just changet a minimal amount of change to make it compile on Ubuntu 18.04. also we updated the recuirements of libboost to make it easyer to usse since outdated Libboost 1.55 is for some people hard to install on later versions of ubuntu, after all we have to make it easy for the makers aswell for the ussers.
+has a tutorial site called  [CryptoNote Starter](https://cryptonotestarter.org/) thats made with an outdated version of Ubuntu 14.04 to build this.
+Ofcourse we respect the origional projects and thats why we just changed a minimal amount to make it compile on Ubuntu 18.04. Also we updated the recuirements of libboost to make it easier to use since outdated Libboost 1.55 is for some people hard to install on later versions of ubuntu, after all we have to make it easy for the makers aswell for the users.
 ### Prepare Ubuntu 18.04, lime or other linux based on Ununtu 18.04
 Execute the following command to get everything you need in order to setup an Ubuntu build environment
 ```
 sudo apt-get install build-essential git cmake libboost-all-dev
 ```
 ### building
-When you are redy to build jou kan build it with the command "make"
-and for faster compiling you can usse more treads "make -j3" the number defines the number of treads
-with systems with 6 or less GB of ram we recommand -j2 flagg to avoid ussing swapmemory with will delay the build extreamly
-also we recomend to keep that nummber lower then the amound of treads the cpu has.
+When you are ready to build you can build it with the command "make"
+and for faster compiling you can use more treads "make -j3" the number 3 defines the number of threads
+with a systems with 6 or less GB of ram we recommand -j2 flagg to avoid using swapmemory with will delay the build extreamly
+also we recommend to keep that number lower then the amount of threads the cpu has.
 
-example if you have a Quadcore i7 HT Enabled (total 8 threads) with 64GB or ram you van do make -j7
+example if you have a Quadcore i7 HT Enabled (total 8 threads) with 64GB or ram you can do make -j7
 
 
 
